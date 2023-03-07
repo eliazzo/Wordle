@@ -1,0 +1,52 @@
+body { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#grid-container {
+  display: grid;
+  grid-template-rows: repeat(6, 1fr); 
+  grid-template-columns: repeat(5, 1fr);
+  gap: 5px;
+  }
+
+      /* fr "fraction" unit represents a fraction of the available space in the grid container */
+
+.grid-cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  height: 3rem;
+  width: 3rem;
+  background-color: white;
+  border: 2px solid #d3d6da;
+  vertical-align: middle;
+
+  }
+
+  .btn {
+    font-weight: bold;
+    background-color: #d3d6da;
+    border: 0;
+    padding: 0;
+    height: 58px;
+    margin: 0 6px 0 0;
+    border-radius: 4px;
+    cursor: pointer;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .keyboard-row {
+    display: flex;
+    margin: 0 auto 9px;
+    width: 100%;
+  }
+
+  .keymodule-half {
+    flex: 0.5;
+  }
+      
